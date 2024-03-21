@@ -1,0 +1,23 @@
+package com.code;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class SortedEmployee {
+
+	public static void main(String[] args) {
+		Map<String, Integer> map = new HashMap<>();
+		map.put("Vikash", 800000);
+		map.put("Deepak", 1800000);
+		map.put("Suraj", 700000);
+		map.put("Adarsh", 600000);
+		map.put("Ritu", 800000);
+		map.put("Vikash", 2000000);
+		map.put("xyz", 500000);
+		
+		
+		
+
+	}
+
+}

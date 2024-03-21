@@ -1,0 +1,25 @@
+package com.code;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class SortedEmployee {
+
+	public static void main(String[] args) {
+		Map<String, Integer> map = new HashMap<>();
+		map.put("Vikash", 800000); //3
+		map.put("Deepak", 1800000); //5
+		map.put("Suraj",  700000);  //2
+		map.put("Adarsh", 600000);  //1
+		map.put("Ritu",   800005);  //4
+		map.put("abc",    2000000); //6
+		map.put("xyz",    500000); //0
+	}
+
+	public static Map.Entry<String, Integer> getNthNumberOfSalary(int number, Map.Entry<String, Integer>map) {
+		
+		return Map.entry(null, null)
+		
+	}
+
+}

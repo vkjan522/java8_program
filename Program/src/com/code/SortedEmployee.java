@@ -1,0 +1,32 @@
+package com.code;
+
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+public class SortedEmployee {
+
+	public static void main(String[] args) {
+		Map<String, Integer> map = new HashMap<>();
+		map.put("Vikash", 800000); 
+		map.put("Deepak", 900000); 
+		map.put("Suraj",  700000); 
+		map.put("Adarsh", 600000); 
+		map.put("Ritu",   500005);
+		map.put("abc",    4000000); 
+		map.put("xyz",    200000); 
+
+		Map.Entry<String, Integer> result =getNthNumberOfSalary(6, map);
+		System.out.println(result);
+		
+	}
+
+	public static Map.Entry<String, Integer> getNthNumberOfSalary(int number, Map<String, Integer> map) {
+
+		return map.entrySet().stream().sorted(Collections.reverseOrder(Map.Entry.comparingByValue()))
+				.collect(Collectors.toList()).get(number);
+
+	}
+
+}
